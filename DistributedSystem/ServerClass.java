@@ -200,7 +200,7 @@ class ClientHandler implements Runnable {
 
                     // Display that the user has uploaded the message to the queue in the server GUI
                     gui.display.append(uName + " uploaded the following message to " + queueSelected + "\n");
-                    String data[] = res.split(",");
+                    String[] data = res.split(",");
                     for(int i=0;i<5;i++) {
                         gui.display.append(data[i] + "\n");
                     }
@@ -391,7 +391,7 @@ class ConversionRules implements Runnable{
 class MessageQueue {
 
     private int capacity; // Capacity of the queue
-    private Vector<String> queue = new Vector<String>(capacity); // Queue
+    private final Vector<String> queue = new Vector<String>(capacity); // Queue
     public List<String> formList = new ArrayList<String>(); // List corresponding to this queue which stores the contents(Formula) of the repository
     String[] converted_length = new String[5]; // To store the converted values
 
