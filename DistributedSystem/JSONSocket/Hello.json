@@ -1,0 +1,11 @@
+{
+    "username": "Kmerpro_Ngola",
+    "message": "Hello, Server!",
+    "timestamp": "2023-01-01T12:34:56",
+    "data": {
+      "value1": 42,
+      "value2": 3.14,
+      "is_enabled": true
+    }
+  }
+  
