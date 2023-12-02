@@ -16,6 +16,7 @@ public class Client {
 
             if (files != null) {
                 for (File file : files) {
+                    System.out.println(file.getName());
                     if (file.isFile()) {
                         // Datei lesen
                         String jsonContent = readJsonFile(String.valueOf(file));
