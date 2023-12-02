@@ -1,4 +1,3 @@
-package DistributedSystem;
 import java.net.Socket;
 
 public class TestConnection {
