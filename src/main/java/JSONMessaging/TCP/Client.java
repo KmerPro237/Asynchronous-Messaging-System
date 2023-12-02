@@ -14,17 +14,8 @@ public class Client {
             File directory = new File(directoryPath);
             File[] files = directory.listFiles();
 
-            /*for(String file : directory.list()) {
-                System.out.println(file);
-            }*/
-
-            for(File file : files) {
-                System.out.println(file.getName());
-            }
-
-            if (files != null) {
-                for (File file : files) {
-                    System.out.println(file.getName());
+            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            for (File file : files) {
                     if (file.isFile()) {
                         // Datei lesen
                         String jsonContent = readJsonFile(String.valueOf(file));
@@ -33,33 +24,17 @@ public class Client {
                         sendJsonFile(socket, file.getName(), jsonContent);
 
                         // Warten auf Bestätigung oder Antwort vom Server
-                        BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                        String response = reader.readLine();
-                        System.out.println("Antwort vom Server für " + file.getName() + ": " + response);
+                        String response = receiveConfirmation(reader);
+                        System.out.println("Antwort vom Server fuer " + file.getName() + ": " + response);
                     }
-                }
             }
 
-            //socket.close();
+            reader.close();
+            socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-            /*System.out.println(System.getProperty("user.dir"));
-            // JSON-Dateipfad auf dem Client
-            String jsonFilePath = ".\\src\\main\\java\\JSONMessaging\\TCP\\FirstMessage.json";
 
-            // JSON-Datei lesen
-            String jsonContent = readJsonFile(jsonFilePath);
-
-            // Hier wird die JSON-Datei an den Server gesendet
-            sendJsonFile(socket, "Message.json", jsonContent);
-
-            // Warten auf Bestätigung oder Antwort vom Server
-            BufferedReader reader = new BufferedReader(new java.io.InputStreamReader(socket.getInputStream()));
-            String response = reader.readLine();
-            System.out.println("Antwort vom Server: " + response);
-
-            socket.close();*/
     }
 
     private static String readJsonFile(String filePath) {
@@ -81,10 +56,14 @@ public class Client {
         writer.println(jsonContent); // JSON-Inhalt senden
         writer.flush();
 
-        // Hier wird die Bestätigungsnachricht vom Server erwartet
+        /*// Hier wird die Bestätigungsnachricht vom Server erwartet
         BufferedReader reader = new BufferedReader(new java.io.InputStreamReader(socket.getInputStream()));
         String confirmation = reader.readLine();
-        System.out.println("Bestaetigung vom Server: " + confirmation);
+        System.out.println("Bestaetigung vom Server: " + confirmation);*/
+    }
+
+    private static String receiveConfirmation(BufferedReader reader) throws IOException {
+        return reader.readLine();
     }
 }
 
