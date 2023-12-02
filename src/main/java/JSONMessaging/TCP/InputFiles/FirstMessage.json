@@ -1,0 +1,18 @@
+{
+  "topic": "Politik",
+  "article": {
+    "title": "Die aktuelle politische Lage",
+    "author": "Max Musterpolitiker",
+    "content": "In den letzten Wochen haben sich politische Ereignisse..."
+  },
+  "comments": [
+    {
+      "user": "PoliticalEnthusiast",
+      "comment": "Sehr interessanter Artikel! Was denkt ihr über die..."
+    },
+    {
+      "user": "OpinionLeader",
+      "comment": "Ich stimme dem Autor zu. Es ist wichtig, dass wir uns mehr..."
+    }
+  ]
+}
