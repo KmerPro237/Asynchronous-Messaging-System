@@ -3,7 +3,7 @@ name: Maven Dependency Tree Submission
 on:
   push:
     branches:
-      - main
+      - alpha
 
 jobs:
   build:
