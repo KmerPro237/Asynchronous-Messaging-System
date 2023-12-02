@@ -14,6 +14,14 @@ public class Client {
             File directory = new File(directoryPath);
             File[] files = directory.listFiles();
 
+            /*for(String file : directory.list()) {
+                System.out.println(file);
+            }*/
+
+            for(File file : files) {
+                System.out.println(file.getName());
+            }
+
             if (files != null) {
                 for (File file : files) {
                     System.out.println(file.getName());
@@ -32,7 +40,7 @@ public class Client {
                 }
             }
 
-            socket.close();
+            //socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -71,6 +79,7 @@ public class Client {
         PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
         writer.println(fileName); // Dateinamen senden
         writer.println(jsonContent); // JSON-Inhalt senden
+        writer.flush();
 
         // Hier wird die Bestätigungsnachricht vom Server erwartet
         BufferedReader reader = new BufferedReader(new java.io.InputStreamReader(socket.getInputStream()));

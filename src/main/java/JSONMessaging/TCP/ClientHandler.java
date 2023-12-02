@@ -17,34 +17,35 @@ public class ClientHandler implements Runnable {
             // Hier wird die Behandlung der Verbindung implementiert
             BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-            // Dateinamen und JSON-Inhalt empfangen
-            String fileName = reader.readLine();
-            String jsonContent = reader.readLine();
+            while (true) {
+                // Dateinamen und JSON-Inhalt empfangen
+                String fileName = reader.readLine();
 
-            // Hier können Sie den erhaltenen JSON-Inhalt weiter verarbeiten
-            System.out.println("Dateiname: " + fileName);
-            System.out.println("JSON-Inhalt: " + jsonContent);
+                if (fileName == null || fileName.equals("END_OF_FILES")) {
+                    // Wenn der Dateiname 'END_OF_FILES' ist, bedeutet dies, dass alle Dateien gesendet wurden
+                    break;
+                }
 
-            // JSON-Verarbeitung
-            try {
-                JSONObject jsonObject = new JSONObject(jsonContent);
+                String jsonContent = reader.readLine();
 
-                // Beispiel: Thema (topic) aus dem JSON-Inhalt extrahieren
-                String topic = jsonObject.optString("topic", "Allgemein");
+                // Hier können Sie den erhaltenen JSON-Inhalt weiter verarbeiten
+                System.out.println("Dateiname: " + fileName);
+                System.out.println("JSON-Inhalt: " + jsonContent);
 
-                // Hier können Sie das Thema weiter verarbeiten
-                System.out.println("Thema: " + topic);
+                // JSON-Verarbeitung (Beispiel: Thema extrahieren)
+                try {
+                    JSONObject jsonObject = new JSONObject(jsonContent);
+                    String topic = jsonObject.optString("topic", "Allgemein");
 
-                // Beispiel: Bestätigung an den Client senden
-                PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);
-                writer.println("Thema empfangen: " + topic);
+                    // Hier können Sie das Thema weiter verarbeiten
+                    System.out.println("Thema: " + topic);
 
-                // Bestätigungsnachricht vom Client empfangen
-                String clientConfirmation = reader.readLine();
-                System.out.println("Bestätigung vom Client: " + clientConfirmation);
-
-            } catch (Exception e) {
-                System.err.println("Fehler beim Parsen der JSON-Datei: " + e.getMessage());
+                    // Beispiel: Bestätigung an den Client senden
+                    PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);
+                    writer.println("Thema empfangen: " + topic);
+                } catch (Exception e) {
+                    System.err.println("Fehler beim Parsen der JSON-Datei: " + e.getMessage());
+                }
             }
 
             clientSocket.close();
@@ -53,4 +54,5 @@ public class ClientHandler implements Runnable {
         }
     }
 }
+
 
