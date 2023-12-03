@@ -5,7 +5,7 @@ import org.eclipse.paho.client.mqttv3.*;
 public class MqttBrokerSimulator {
 
     public static void main(String[] args) {
-        String broker = "tcp://mqtt.eclipse.org:1883"; // Öffentlicher MQTT-Broker für Testzwecke
+        String broker = "tcp://mqtt.eclipseprojects.io:1883"; // Öffentlicher MQTT-Broker für Testzwecke
         String clientId = "MqttBroker";
 
         try {
@@ -35,6 +35,15 @@ public class MqttBrokerSimulator {
             });
 
             // Simuliere mehrere Topics, die vom Broker überwacht werden
+
+            /*while (true) {
+                for (int i = 0; i < 100; i++) {
+                    String topic = "test/topic/" + i;
+                    System.out.println("Subscribing to topic: " + topic);
+                    client.subscribe(topic);
+                }
+            }*/
+
             String[] topics = {"test/topic", "another/topic"};
             for (String topic : topics) {
                 System.out.println("Subscribing to topic: " + topic);
@@ -42,12 +51,14 @@ public class MqttBrokerSimulator {
             }
 
             // Warten, um Nachrichten zu empfangen
-            Thread.sleep(10000);
+            Thread.sleep(1000000);
 
             client.disconnect();
             System.out.println("Broker disconnected");
-        } catch (MqttException | InterruptedException e) {
+        } catch (MqttException e) {
             e.printStackTrace();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 }

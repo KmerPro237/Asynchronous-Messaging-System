@@ -5,7 +5,7 @@ import org.eclipse.paho.client.mqttv3.*;
 public class MqttSubscriber {
 
     public static void main(String[] args) {
-        String broker = "tcp://mqtt.eclipse.org:1883"; // Öffentlicher MQTT-Broker für Testzwecke
+            String broker = "tcp://mqtt.eclipseprojects.io:1883"; // Öffentlicher MQTT-Broker für Testzwecke
         String clientId = "MqttSubscriber";
         String topic = "test/topic";
 
@@ -38,7 +38,7 @@ public class MqttSubscriber {
             System.out.println("Subscribing to topic: " + topic);
             client.subscribe(topic);
 
-            Thread.sleep(5000);
+            Thread.sleep(50000);
 
             client.disconnect();
             System.out.println("Disconnected");
@@ -47,4 +47,3 @@ public class MqttSubscriber {
         }
     }
 }
-
