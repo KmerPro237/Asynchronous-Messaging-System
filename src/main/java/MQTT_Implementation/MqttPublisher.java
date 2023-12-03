@@ -11,7 +11,7 @@ public class MqttPublisher {
             String topic = "test/topic";
 
             try {
-                MqttClient client = new MqttClient(broker, clientId);
+                MqttClient client = new MqttClient(broker, clientId, null);
                 MqttConnectOptions connOpts = new MqttConnectOptions();
                 connOpts.setCleanSession(true);
 
