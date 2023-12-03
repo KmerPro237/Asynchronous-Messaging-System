@@ -1,4 +1,4 @@
-# Asynchronous-Messaging-System implemented using java sockets
+# Asynchronous-Messaging-System 
 
 ## Applied concepts and technologies
 
@@ -15,3 +15,8 @@
 - Java Client/Server TCP-Sockets
 - Eclipse paho MQTT
 - Message Queues
+
+### ToDos:
+- Broker scalability and load-balancing
+- High Availability on server side
+- Disributed persistence and routing
