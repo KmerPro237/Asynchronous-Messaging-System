@@ -15,6 +15,7 @@
   
   - Direct Exchangers
     - Messages are routed to queues based on the routing key of the message. Routing keys are key-value pairs that are part of the message header. The routing key is matched against the binding key of the queue. If they match, the message is routed to the queue.
+
       ![img_1.png](Images/img_1.png)
   
   - Fanout Exchangers
