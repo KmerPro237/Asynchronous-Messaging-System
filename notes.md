@@ -1,7 +1,7 @@
 # Notes on Messaging protocols: AMQP, MQTT, STOMP, JMS, WebSockets
 
 ## Standard AMQP Messaging in RabbitMQ
-![img.png](img.png)
+![img.png](Images/img.png)
 ## Message reception, processing and delivery within a distributed Architecture
 
 ## Exchangers
@@ -15,19 +15,19 @@
   
   - Direct Exchangers
     - Messages are routed to queues based on the routing key of the message. Routing keys are key-value pairs that are part of the message header. The routing key is matched against the binding key of the queue. If they match, the message is routed to the queue.
-      ![img_1.png](img_1.png)
+      ![img_1.png](Images/img_1.png)
   
   - Fanout Exchangers
       - Messages are routed to all the queues that are bound to the exchanger. The routing key is ignored in this case.
-      ![img_3.png](img_3.png)
+      ![img_3.png](Images/img_3.png)
   
   - Topic Exchangers
     - Here, the routing key follows a specific naming pattern using wildcards and conventions. When the adequate routing key is found, the message will be sent to the corresponding queue.
-      ![img_2.png](img_2.png)
+      ![img_2.png](Images/img_2.png)
   
   - Headers Exchangers
       - Messages are routed based on the headers in the message. The routing key is ignored in this case.
-      ![img_4.png](img_4.png)
+      ![img_4.png](Images/img_4.png)
   
   - Default Exchangers
     - Messages are routed to the queue with the same name as the routing key. If no such queue exists, the message is discarded. Every exchanger is bound to a default queue with the same name as the exchanger.
