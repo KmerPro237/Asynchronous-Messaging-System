@@ -34,3 +34,23 @@
         
   - Dead Letter Exchangers
       - Messages that are not delivered to the queue within a specified time are sent to a dead letter queue. This is useful for debugging purposes.
+  
+## MQTT as another messaging protocol
+- MQTT is a lightweight messaging protocol that is used in IoT applications. It is based on the publish-subscribe model.
+- MQTT is based on the TCP/IP protocol and is designed for constrained devices and low-bandwidth, high-latency networks.
+- MQTT uses a broker to route messages between publishers and subscribers. The broker is responsible for receiving messages from publishers and sending them to the subscribers.
+- MQTT uses a topic-based publish-subscribe model. Publishers publish messages to a topic. Subscribers subscribe to a topic and receive messages from the broker.
+- MQTT uses a QoS (Quality of Service) level to determine the reliability of message delivery. There are three levels of QoS:
+  - QoS 0: At most once delivery
+  - QoS 1: At least once delivery
+  - QoS 2: Exactly once delivery
+  
+  ![img.png](Images/mqtt.png)
+  
+### Publish-Subscribe Characteristics
+- Space decoupling
+  - Publishers and subscribers are decoupled in space. They do not need to know about each other.
+- Time decoupling
+  - Publishers and subscribers are decoupled in time. They do not need to be active at the same time.
+- Synchronization decoupling
+  - Publishers and subscribers are decoupled in synchronization. They do not need to be active at the same time.
