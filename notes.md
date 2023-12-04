@@ -50,7 +50,20 @@
 ### Publish-Subscribe Characteristics
 - Space decoupling
   - Publishers and subscribers are decoupled in space. They do not need to know about each other.
-- Time decoupling
+
+- Time decoupling (Queueing)
   - Publishers and subscribers are decoupled in time. They do not need to be active at the same time.
+
 - Synchronization decoupling
-  - Publishers and subscribers are decoupled in synchronization. They do not need to be active at the same time.
+  - Publishers and subscribers are decoupled in synchronization. They do not need to be active at the same time. Asynchronous communication is possible with APIs for example.
+  - Synchronous vs asynchronous APIs
+    - Synchronous API calls 
+      ![img.png](Images/synchronousAPI.png)
+    - Asynchronous API calls
+      ![img_1.png](Images/AsynchronousAPI.png)
+
+- Scalability
+  - Publishers and subscribers can be scaled independently. Multiple broker instances can be clustered into a single instance to form a virtual broker which then scales the system.
+
+- SPOF (Single Point of Failure)
+  - The broker is a single point of failure. If the broker fails, the entire system fails. To avoid this, the broker can be clustered into a virtual broker.
