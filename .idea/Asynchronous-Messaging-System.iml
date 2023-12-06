@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
@@ -54,5 +61,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.1.1" level="project" />
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.12.0" level="project" />
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-commons:1.12.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:8.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.6.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />
   </component>
 </module>
