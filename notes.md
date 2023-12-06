@@ -67,3 +67,27 @@
 
 - SPOF (Single Point of Failure)
   - The broker is a single point of failure. If the broker fails, the entire system fails. To avoid this, the broker can be clustered into a virtual broker.
+
+### Example Commands for the System
+
+#### Publisher
+- publish --- (topic, message)
+
+#### Subscriber
+- subscribe --- (topic)
+- unsubscribe --- (topic)
+- aknowledge --- (messageId)
+- getMessages --- (topic)
+
+#### Admin-Client
+- createTopic --- (topic)
+- deleteTopic --- (topic)
+- modifyTopic --- (topic, messageId, value)
+- listTopics --- ()
+- listSubscribers --- (topic)
+- listPublishers --- (topic)
+- listMessages --- (topic, subscriber)
+- getClientStatus --- (clientId)
+- monitorConnections --- (clientId)
+- monitorTopics --- (topicId)
+- configure --- (setting, value)
