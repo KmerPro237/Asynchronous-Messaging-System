@@ -15,6 +15,8 @@
 - Java Client/Server TCP-Sockets
 - Eclipse paho MQTT
 - Message Queues
+- Websockets
+- REST APIs
 
 ### ToDos:
 - Broker scalability and load-balancing
