@@ -20,3 +20,5 @@
 - Broker scalability and load-balancing
 - High Availability on server side
 - Disributed persistence and routing
+- Setup of multitier message communication system
+  
