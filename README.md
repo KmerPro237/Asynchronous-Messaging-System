@@ -5,11 +5,13 @@
 ### Design Patterns
 - Pub/Sub Design pattern
 - MOM with Message Queues as brokers
+- Client Server Architecture
 
 ### Java Technologies and Implementations
 - Spring CLI component
 - Java Beans
 - Serialization und Multithreading
+- Spring Boot
 
 ### Implemented Protocols
 - Java Client/Server TCP-Sockets
@@ -17,6 +19,9 @@
 - Message Queues
 - Websockets
 - REST APIs
+- gRPC
+- RMI
+- Java Remote Method Invocation
 
 ### ToDos:
 - Broker scalability and load-balancing
