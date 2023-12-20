@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "com.example.grpc";
+option java_outer_classname = "MessageBrokerProto";
+
+service MessageBroker {
+  rpc PublishMessage(Message) returns (Empty);
+  rpc Subscribe(Subscription) returns (stream Message);
+}
+
+message Message {
+  string topic = 1;
+  string content = 2;
+}
+
+message Subscription {
+  repeated string topics = 1;
+}
+
+message Empty {}
