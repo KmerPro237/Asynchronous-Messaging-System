@@ -4,5 +4,10 @@
 
 - For example, an application that provides real-time stock quotes might use SSE to push price updates from the server to the browser as soon as the server receives them. Such an application wouldn’t need Web Sockets because the data travels in only one direction, and polling the server by using HTTP requests wouldn’t provide real-time updates.
 
-
+--------
++
     ![image](https://github.com/KmerPro237/Asynchronous-Messaging-System/assets/118595893/e84bcf2c-5da8-48e2-abaf-8583cdebb708)
+
+--------
+
+
