@@ -21,13 +21,29 @@
   
   Here's a basic example of an SSE event stream:
 
-  ````cassandraql
+   ````cassandraql
   
     data: This is a message\n
     event: customEvent\n
     id: 123\n\n
 
-  ````
+   ````
+
+  ## - SSE vs REST
+
+    Server-Sent Events (SSE) and Representational State Transfer (REST) are two different concepts that serve different purposes in web development.
+  
+  ### - Server-Sent Events (SSE):
+  
+    - Purpose: SSE is a technology that enables server-to-client communication for real-time updates. It allows a server to push data to a web client over a single, long-lived HTTP connection.
+    - Direction: SSE is unidirectional, meaning that data flows only from the server to the client.
+    - Use Case: SSE is often used for scenarios where real-time updates or streaming data from the server to the client is required, such as live feeds, notifications, or status updates.
+  
+  ### - Representational State Transfer (REST):
+  
+    - Purpose: REST is an architectural style for designing networked applications. It is not a protocol but a set of principles that define how web services should be structured. RESTful APIs use standard HTTP methods (GET, POST, PUT, DELETE) to perform CRUD (Create, Read, Update, Delete) operations on resources.
+    - Direction: RESTful communication is typically initiated by the client, and the server responds with the requested data or performs the requested action.
+    - Use Case: RESTful APIs are commonly used for building web services that provide a standardized way for different systems to communicate over the web. They are widely used in scenarios where data needs to be retrieved, modified, or deleted.
   
 
 
