@@ -9,8 +9,5 @@
         <module name="Asynchronous-Messaging-System" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Asynchronous-Messaging-System" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
