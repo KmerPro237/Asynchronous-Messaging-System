@@ -1,0 +1,25 @@
+syntax = "proto3"; 
+/* *
+ * If no explicit java_package option is given in the .proto file, then by default the proto package
+ * (specified using the “package” keyword) will be used
+ * */
+option java_package = "de.htwsaar.esch.grpc.math.proto";
+
+/* The math service service definition. */
+service MathService {
+  rpc Add (MathRequest) returns (MathResponse);
+  rpc Subtract (MathRequest) returns (MathResponse);
+  rpc Multiply (MathRequest) returns (MathResponse);
+  rpc Divide (MathRequest) returns (MathResponse);
+}
+
+
+
+message MathRequest {
+    int32 num1 = 1;
+    int32 num2 = 2;
+}
+
+message MathResponse {
+    int32 result = 1;
+}
