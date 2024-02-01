@@ -1,3 +1,7 @@
+import jakarta.ws.rs.client.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Employee {
@@ -36,9 +40,9 @@ public class Employee {
         Invocation.Builder invocationBuilder
                 = employeeWebTarget.request(MediaType.APPLICATION_JSON);
         Response response
-                = invocationBuilder.get(Employee.class);
-        Response response
+                = invocationBuilder.get(Response.class);
+        /*Response response
                 = invocationBuilder
-                .post(Entity.entity(employee, MediaType.APPLICATION_JSON);
+                .post(Entity.entity(Employee.class, MediaType.APPLICATION_JSON);*/
     }
 }
