@@ -26,4 +26,19 @@ public class Employee {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public static void main(String[] args) {
+        Client client = ClientBuilder.newClient();
+        WebTarget webTarget
+                = client.target("http://localhost:8082/spring-jersey");
+        WebTarget employeeWebTarget
+                = webTarget.path("resources/employees");
+        Invocation.Builder invocationBuilder
+                = employeeWebTarget.request(MediaType.APPLICATION_JSON);
+        Response response
+                = invocationBuilder.get(Employee.class);
+        Response response
+                = invocationBuilder
+                .post(Entity.entity(employee, MediaType.APPLICATION_JSON);
+    }
 }
