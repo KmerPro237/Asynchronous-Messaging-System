@@ -17,6 +17,7 @@ public class TestConnection {
     }
 
         public static void main(String[] args) {
+            processData();
             String serverHost = "localhost";
             int serverPort = 5057;
 
