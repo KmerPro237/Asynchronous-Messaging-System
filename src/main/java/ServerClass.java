@@ -10,6 +10,9 @@
  */
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.DataInputStream;
@@ -41,7 +44,20 @@ public class ServerClass {
     public static final List<String> listC = new ArrayList<String>();
     public static boolean quit = false;
 
+    private static final Logger logger = LogManager.getLogger(ServerClass.class);
+
+    public static void processData(){
+        logger.trace("FROM CLIENT TRACE METHOD:");
+        logger.debug("FROM CLIENT DEBUG METHOD:");
+        logger.info("FROM CLIENT INFO METHOD:");
+        logger.warn("FROM CLIENT WARN METHOD:");
+        logger.error("FROM CLIENT ERROR METHOD:");
+        logger.fatal("FROM CLIENT FATAL METHOD:");
+    }
+
     public static void main(String[] args) throws IOException {
+
+        processData();
 
         // open a server socket
         ss = new ServerSocket(5056);

@@ -4,12 +4,12 @@
         <Console name="DistributedSystemConsole" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-        <file name="DistributedSystemLogFile" fileName="logs/DistributedSystem.log">
+        <file name="DistributedSystemLogFile" fileName="DistributedSystems.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </file>
     </appenders>
     <loggers>
-        <Root level="trace">
+        <Root>
             <AppenderRef ref="DistributedSystemConsole"/>
             <AppenderRef ref="DistributedSystemLogFile"/>
         </Root>
