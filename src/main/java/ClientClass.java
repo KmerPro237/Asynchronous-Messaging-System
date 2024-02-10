@@ -10,6 +10,10 @@
  */
 
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -35,6 +39,7 @@ import javax.swing.SwingConstants;
 
 public class ClientClass extends JFrame implements ItemListener {
 
+    private static final Logger logger = LogManager.getLogger(ClientClass.class);
     private static final long serialVersionUID = 1L;
 
     // GUI Components
@@ -57,6 +62,15 @@ public class ClientClass extends JFrame implements ItemListener {
 
     public ClientClass() {
         createClientGUI();
+    }
+
+    public void processData(){
+        logger.trace("FROM CLIENT TRACE METHOD:");
+        logger.debug("FROM CLIENT DEBUG METHOD:");
+        logger.info("FROM CLIENT INFO METHOD:");
+        logger.warn("FROM CLIENT WARN METHOD:");
+        logger.error("FROM CLIENT ERROR METHOD:");
+        logger.fatal("FROM CLIENT FATAL METHOD:");
     }
 
     // Creating a Client GUI
