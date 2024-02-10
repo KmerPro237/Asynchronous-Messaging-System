@@ -64,7 +64,7 @@ public class ClientClass extends JFrame implements ItemListener {
         createClientGUI();
     }
 
-    public void processData(){
+    public static void processData(){
         logger.trace("FROM CLIENT TRACE METHOD:");
         logger.debug("FROM CLIENT DEBUG METHOD:");
         logger.info("FROM CLIENT INFO METHOD:");
@@ -191,6 +191,7 @@ public class ClientClass extends JFrame implements ItemListener {
 
 
     public static void main(String[] args) {
+        processData();
         /*Reference
          * 1) https://www.geeksforgeeks.org/introducing-threads-socket-programming-java/
          */
