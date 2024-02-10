@@ -69,8 +69,8 @@ public class ClientClass extends JFrame implements ItemListener {
         logger.debug("FROM CLIENT DEBUG METHOD:");
         logger.info("FROM CLIENT INFO METHOD:");
         logger.warn("FROM CLIENT WARN METHOD:");
-        logger.error("FROM CLIENT ERROR METHOD:", new Exception("This is an error exception"));
-        logger.fatal("FROM CLIENT FATAL METHOD:", new RuntimeException("This is a fatal runtime exception"));
+        logger.error("FROM CLIENT ERROR METHOD:", new Exception("Error Event occured on client:"));
+        logger.fatal("FROM CLIENT FATAL METHOD:", new RuntimeException("Fatal Event occured on client:"));
     }
 
     // Creating a Client GUI

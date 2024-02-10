@@ -51,8 +51,8 @@ public class ServerClass {
         logger.debug("FROM CLIENT DEBUG METHOD:");
         logger.info("FROM CLIENT INFO METHOD:");
         logger.warn("FROM CLIENT WARN METHOD:");
-        logger.error("FROM CLIENT ERROR METHOD:");
-        logger.fatal("FROM CLIENT FATAL METHOD:");
+        logger.error("FROM CLIENT ERROR METHOD:", new Exception("Error Event occured on Server:"));
+        logger.fatal("FROM CLIENT FATAL METHOD: Fatal Event occured on server");
     }
 
     public static void main(String[] args) throws IOException {
