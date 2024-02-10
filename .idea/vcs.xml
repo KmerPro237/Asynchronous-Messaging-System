@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Middlewares_Impl/04 Middleware/rest" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Middlewares_Impl/04 Middleware/rmi" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Middlewares_Impl/04 Middleware/soap" vcs="Git" />
   </component>

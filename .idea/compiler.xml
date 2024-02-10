@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Asynchronous-Messaging-System" />
-        <module name="SwaggerUIExample" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SwaggerUIExample" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
