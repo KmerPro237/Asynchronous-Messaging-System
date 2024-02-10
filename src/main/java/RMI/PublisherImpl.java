@@ -4,13 +4,13 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class PublisherImpl extends UnicastRemoteObject implements Publisher {
+public class PublisherImpl extends UnicastRemoteObject {
 
     protected PublisherImpl() throws RemoteException {
         super();
     }
 
-    @Override
+
     public void publish(Message message) throws RemoteException {
         // Logic to publish the message to the broker
         Broker broker = lookupBroker();
@@ -28,7 +28,7 @@ public class PublisherImpl extends UnicastRemoteObject implements Publisher {
 
     public static void main(String[] args) {
         try {
-            Publisher publisher = new PublisherImpl();
+            PublisherImpl publisher = new PublisherImpl();
             Naming.rebind("rmi://localhost/Publisher", publisher);
             System.out.println("Publisher ready.");
         } catch (Exception e) {

@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class BrokerImpl extends UnicastRemoteObject implements Broker {
 
-    private Map<String, Subscriber> subscribers = new HashMap<>();
+    private Map<String, SubscriberImpl> subscribers = new HashMap<>();
 
     protected BrokerImpl() throws RemoteException {
         super();
@@ -31,10 +31,11 @@ public class BrokerImpl extends UnicastRemoteObject implements Broker {
     }
 
     @Override
-    public void subscribe(Subscriber subscriber, String topic) throws RemoteException {
+    public void subscribe(SubscriberImpl subscriber, String topic) throws RemoteException {
         // Subscribe the client to a topic
         subscribers.put(topic, subscriber);
     }
+
 
     public static void main(String[] args) {
         try {
