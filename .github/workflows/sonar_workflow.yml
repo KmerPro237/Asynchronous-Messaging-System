@@ -35,4 +35,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=AsynchronousMessagingSystem -Dsonar.projectName='AsynchronousMessagingSystem'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=AsynchronousMessagingSystem -Dsonar.projectName='AsynchronousMessagingSystem' -Dsonar.login=sqp_d44236817253ae0edea05be4ecd55df3c75ace65
