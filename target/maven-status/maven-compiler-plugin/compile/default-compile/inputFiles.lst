@@ -1,26 +1,38 @@
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\Message.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\Producer.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\MQTT_Implementation\MqttBrokerSimulator.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\TestConnection.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\JSONMessaging\TCP\ClientHandler.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\MessageQueue.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\ClientClass.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\JSONMessaging\TCP\Server.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\TestField.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\SpringCLI\SpringCLI.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\TestField.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\MessageQueue.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\gRPC\MessageBrokerServer.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\MQTT_Implementation\MqttSubscriber.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\JMS\Publisher.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\Consumer.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\SpringCLI\SimpleCLI.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\gRPC\MessageBrokerClient.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\MQTT_Implementation\MqttPublisher.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\JMS\Broker.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\Producer.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\Consumer.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\Message.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\JSONMessaging\TCP\Client.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\ServerClass.java
-C:\Users\Sosthene\Documents\Studium\pppp\3. Semester\Prog3\Projekt\Asynchronous-Messaging-System\src\main\java\JMS\Subscriber.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\JMS\Broker.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\Message.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\RMI\Broker.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\RMI\BrokerImpl.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\JSONMessaging\TCP\Client.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\RMI\PublisherImpl.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\gRPC\MessageBrokerClient.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\MQTT_Implementation\MqttBrokerSimulator.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\MQTT_Implementation\MqttSubscriber.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\Producer.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\TestField.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\Subscriber.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\Consumer.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\SpringCLI\SimpleCLI.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\SubscriptionRequest.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\gRPC\MessageBrokerServer.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\TestField.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\MQTT_Implementation\MqttPublisher.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\JMS\Publisher.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\RMI\SubscriberImpl.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\PublisherController.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\MessageQueue.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\MessageBrokerApplication.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\RMI\Message.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\Consumer.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\Message.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\SpringCLI\SpringCLI.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\JSONMessaging\TCP\Server.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\BeansQueue\MessageQueue.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\ClientClass.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\Message.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\SubscriberController.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\TestConnection.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\REST\BrokerService.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\ServerClass.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\QueueBasedMessaging\Producer.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\JMS\Subscriber.java
+C:\Users\Sosthene\Documents\Studium\pppp\5. Semester\Verteilte Systeme\Asynchronous-Messaging-System\src\main\java\JSONMessaging\TCP\ClientHandler.java
