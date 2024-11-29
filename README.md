@@ -29,5 +29,5 @@
 - Disributed persistence and routing
 - Setup of multitier message communication system
 - Test Middleware technologies gRPC, RMI, JRMI
-- Build REST-API for broker commuunication.
+- Build REST-API for broker communication.
   
