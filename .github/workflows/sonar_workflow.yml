@@ -1,7 +1,7 @@
 name: Build sonar workflow
 
 on:
-  push:
+  worfklow_dispatch:
     branches:
       - main
 
